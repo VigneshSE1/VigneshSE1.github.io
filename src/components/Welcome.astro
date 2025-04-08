@@ -1,24 +1,30 @@
 ---
 import "../styles/global.css";
 import Header from "./Header.astro";
+import SocialMedia from "./SocialMedia.astro";
 ---
 
-<div id="container">
+<div id="container" class="max-h-full">
   <Header />
-  <main class="container mx-auto md:px-10 mt-10">
+  <main class="mx-auto md:px-10 mt-10">
     <section class="flex py-20 px-4">
       <div class="flex flex-col gap-5">
-        <h1 class="text-6xl font-bold max-sm:text-2xl">Software Engineer</h1>
-        <p class="text-pblack text-2xl">Backend, Data, Devops, AI</p>
+        <h1 class="text-6xl font-bold max-sm:text-2xl text-white">
+          Vigneshwaran Mariyappan
+        </h1>
+        <h6 class="text-5xl font-bold max-sm:text-2xl text-gray-300">
+          Software Engineer
+        </h6>
+        <p class="text-2xl italic font-light max-sm:text-lg text-gray-400">
+          Backend | Frontend | DevOps | Cloud
+        </p>
+        <button
+          class="px-10 py-2 mt-8 text-lg max-w-fit font-medium text-blue-900 bg-white rounded-md shadow hover:bg-red-600 hover:text-white transition duration-300 ease-in-out"
+        >
+          Contact Me
+        </button>
       </div>
-      <div></div>
     </section>
   </main>
+  <SocialMedia />
 </div>
-
-<style>
-  #container {
-    background-color: #f2f2f2;
-    height: 100%;
-  }
-</style>
